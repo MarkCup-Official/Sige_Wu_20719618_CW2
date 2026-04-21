@@ -74,7 +74,7 @@ max_temperature = max(temperatures);
 ave_temperature = mean(temperatures);
 
 % Print minimum, maximum and average temperature
-log = sprintf('\n%-15s%.2f °C\n%-15s%.2f °C\n%-15s%.2f °C\n\nData logging terminated','Max temp',max_temperature,'Min temp',min_temperature,'Average temp',ave_temperature);
+log = sprintf('\n%-15s%.2f °C\n%-15s%.2f °C\n%-15s%.2f °C\n\nData logging terminated\n','Max temp',max_temperature,'Min temp',min_temperature,'Average temp',ave_temperature);
 fprintf(log); % Print to screen
 fprintf(log_file,log); % Print to log file
 
