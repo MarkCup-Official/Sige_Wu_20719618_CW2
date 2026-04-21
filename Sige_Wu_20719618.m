@@ -24,6 +24,7 @@ end
 
 
 %% TASK 1 - READ TEMPERATURE DATA, PLOT, AND WRITE TO A LOG FILE [20 MARKS]
+%{
 clear;
 
 % Define constants
@@ -90,11 +91,17 @@ ylabel('Temperature (°C)');
 
 % Save plot as PNG file.
 saveas(gcf, 'temperature_vs_time_plot.png');
+%}
 
 
 %% TASK 2 - LED TEMPERATURE MONITORING DEVICE IMPLEMENTATION [25 MARKS]
+clear;
 
-% Insert answers here
+% Connect the UNO arduino device through the COM8 port
+a = arduino("COM8","Uno");
+
+% Call function
+temp_monitor(a);
 
 
 %% TASK 3 - ALGORITHMS – TEMPERATURE PREDICTION [30 MARKS]
