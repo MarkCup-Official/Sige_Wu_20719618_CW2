@@ -1,7 +1,3 @@
-% Sige Wu
-% ssysw20@nottingham.edu.cn
-
-
 function temp_monitor(a)
     % This function continuously monitors and records the temperature, and 
     % also supports displaying temperature status using LEDs.

@@ -1,7 +1,3 @@
-% Sige Wu
-% ssysw20@nottingham.edu.cn
-
-
 function temp_prediction(a)
     % This function continuously monitors temperature and predicts future
     % temperature trend, and includes an LED indicator.
