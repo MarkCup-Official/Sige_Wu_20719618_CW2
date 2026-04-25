@@ -95,6 +95,7 @@ saveas(gcf, 'temperature_vs_time_plot.png');
 
 
 %% TASK 2 - LED TEMPERATURE MONITORING DEVICE IMPLEMENTATION [25 MARKS]
+%{
 clear;
 
 % Connect the UNO arduino device through the COM8 port
@@ -102,11 +103,18 @@ a = arduino("COM8","Uno");
 
 % Call function
 temp_monitor(a);
+%}
 
 
 %% TASK 3 - ALGORITHMS – TEMPERATURE PREDICTION [30 MARKS]
 
-% Insert answers here
+clear;
+
+% Connect the UNO arduino device through the COM8 port
+a = arduino("COM8","Uno");
+
+% Call function
+temp_prediction(a);
 
 
 %% TASK 4 - REFLECTIVE STATEMENT [5 MARKS]
